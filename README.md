@@ -5,8 +5,10 @@
 
 有一个数据集很大，无法上传，自行下载，下载地址：https://www.kaggle.com/competitions/acquire-valued-shoppers-challenge/data?select=transactions.csv.gz
 
+运行代码前需要安装搭建相关的环境
 搭建环境：
 1、python
 2、pip --default-timeout=1000 install sklearn
 3、pip --default-timeout=1000 install pandas
+4、pip install -i https://pypi.tuna.tsinghua.edu.cn/simple xgboost
 
