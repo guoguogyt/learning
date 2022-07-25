@@ -3,11 +3,13 @@
 import numpy as np
 import pandas as pd
 
+# 前五列
 dtype_dict = {"id":"str","chain":"str","dept":"str","category":"str","company":"str","brand":"str"}
 data = pd.read_csv('transactions.csv', nrows=999999, dtype=dtype_dict)
 data['date'] = pd.to_datetime(data['date'])
 data.head(5)
 
+# 返回一个随机整型数
 transaction_ids = np.random.randint(100000,data.shape[0],size=data.shape[0])
 
 grouped = data.groupby(['date','id','chain'])

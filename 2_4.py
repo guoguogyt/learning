@@ -11,6 +11,7 @@ y = dataset['balance']
 
 fig = plt.figure(figsize=(6,6))
 fig.suptitle('age&balance relation')
+#将当前区域划分为3x3的网格
 grid =plt.GridSpec(4,4,hspace=0.2,wspace=0.2)
 main_ax = fig.add_subplot(grid[:-1,1:])
 y_hist = fig.add_subplot(grid[:-1,0],xticklabels=[],sharey=main_ax)

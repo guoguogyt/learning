@@ -14,6 +14,7 @@ clf1 = LogisticRegression(solver='lbfgs', multi_class='multinomial',random_state
 clf2 = RandomForestClassifier(n_estimators=50,random_state=1)
 clf3 = GaussianNB()
 
+#每个方法预先的权值，默认各方法权值相同.
 eclf = VotingClassifier(estimators=[('lr',clf1),('rf',clf2),('gnb',clf3)],voting='soft', weights=[1,1,5])
 
 for clf,label in zip([clf1,clf2,clf3,eclf],['Logistic Regression','Random Forest','native Bayes','Ensemble']):

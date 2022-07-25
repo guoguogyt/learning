@@ -12,5 +12,5 @@ print("Iteration:"+str(clf1.n_iter_))
 clf1 = lr1.fit(X,y)
 print("Iteration:"+str(clf1.n_iter_))
 
-Iteration:[39]
-Iteration:[2]
+# Iteration:[39]
+# Iteration:[2]

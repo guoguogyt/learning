@@ -22,13 +22,19 @@ ax2 = fig.add_subplot(2,2,2)
 ax3 = fig.add_subplot(2,2,3)
 ax4 = fig.add_subplot(2,2,4)
 
+'''
+    x, y, x刻度标签
+'''
 ax1.bar(range(len(job_count.values())), job_count.values(), tick_label=list(job_count.keys()))
 ax1.set_xticklabels(list(job_count.keys()), rotation='45')
 ax1.set_title('job', fontsize='20')
+
 ax2.bar(range(len(marital_count.values())), marital_count.values(), tick_label=list(marital_count.keys()))
 ax2.set_title('marital', fontsize='20')
+
 ax3.bar(range(len(edu_count.values())), edu_count.values(), tick_label=list(edu_count.keys()))
 ax3.set_title('education', fontsize='20')
+
 ax4.bar(range(len(y_count.values())), y_count.values(), tick_label=list(y_count.keys()))
 ax4.set_title('y', fontsize='20')
 
